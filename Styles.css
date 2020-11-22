@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#main-doc{
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+#navbar{
+  width: 25%;
+  height: 100%;
+  position: fixed;
+  background: #0099ff;
+  color: white;
+}
+#right-nav{
+    width: 75%;
+    height: auto;
+    
+     margin-left: 28%;
+     padding-inline-end: 20px;
+}
+header{
+    margin-top: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    background: #0f4061;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+}
+.main-section{
+    margin-bottom: 40px;
+}
+.main-section header{
+    text-align: left;
+    background: white;
+    font-weight: normal;
+} 
+p{
+    margin-inline-start: 10px;
+    word-spacing: 5px;
+    line-height: 20px;
+    font-size: 1.06rem;
+}
+li{
+    margin-block-end: 10px;
+    word-spacing: 5px;
+    line-height: 20px;
+    font-size: 1.06rem;
+}
+pre{
+    background: lightgray;
+    width: 75%;
+    margin: auto;
+    padding-left: 20px;
+}
+code{
+    white-space: pre-line;
+    font-size: 1.01rem;
+}
+#navbar ul{
+    padding-inline-start: 0;
+}
+#navbar li{
+    list-style: none;
+    
+    
+    font-size: 1.5rem;
+    padding-block-start: 20px;
+    padding-block-end: 20px;
+    padding-inline-start: 10px;
+}
+#navbar .nav-link{
+    text-decoration: none;
+color: white;     
+}
+#navbar li:hover{
+    background: #0f4061;
+    color: white;
+}
+#navbar li:active{
+    background: #0f4061;
+    color: white;
+}
+
+
+@media(max-width:1020px){
+    #main-doc{
+        width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+        flex-direction: column;
+    }
+
+    #navbar{
+        width: 80%;
+        height: 40%;
+        margin: auto;
+        overflow-y: scroll;
+        left: 10%;
+        
+        bottom: 59%;
+    }
+    #navbar header{
+        position: sticky;
+        top: 0;
+        
+    }
+    header{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 15px;
+    }
+    li{
+        font-size: 15px;
+    }
+    #navbar li{
+        font-size: 20px;
+    }
+    code{
+        font-size: 15px;
+    }
+    #right-nav{
+        position: fixed;
+        width: 78%;
+        height: 60%;
+        margin-left: 0;
+        left: 10%;
+        top: 50%;
+        overflow-y: scroll;
+      
+    }
+    
+}
